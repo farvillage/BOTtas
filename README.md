@@ -10,9 +10,11 @@ And yes, he's my favourite driver. <br/>
 
 ##
 
-###How to run BOTtas?
+**How to run BOTtas?**
 
 In terminal, run:
 ```python3 app.py```
 
 ##
+
+(I had some problems with a earlier repository, so, I made a new one)
