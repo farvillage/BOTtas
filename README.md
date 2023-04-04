@@ -6,7 +6,7 @@ My first Discord Bot made in Python. <br/>
 Yes, it's about Valtteri Bottas. <br/>
 And yes, he's my favourite driver. <br/>
 
-<img src="<div class="tenor-gif-embed" data-postid="27652448">
+<img src="https://media.tenor.com/-wzjP690nzkAAAAC/alfa-romeo-formula1.gif">
 
 ##
 
