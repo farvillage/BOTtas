@@ -16,5 +16,3 @@ In terminal, run:
 ```python3 app.py```
 
 ##
-
-(I had some problems with a earlier repository, so, I made a new one)
