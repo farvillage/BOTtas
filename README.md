@@ -2,9 +2,9 @@
 
 ### Discord Bot: BOTtas
 
-My first Discord Bot made in Python. <br/>
-Yes, it's about Valtteri Bottas. <br/>
-And yes, he's my favourite driver. <br/>
+My first Discord Bot made in Python. <br>
+Yes, it's about Valtteri Bottas. <br>
+And yes, he's my favourite driver. <br>
 
 <a href="#"><img src="https://media.tenor.com/-wzjP690nzkAAAAC/alfa-romeo-formula1.gif">
 
@@ -12,7 +12,7 @@ And yes, he's my favourite driver. <br/>
 
 **How to run BOTtas?**
 
-In terminal, run:
+In terminal, run: <br>
 ```python3 app.py```
 
 ##
