@@ -10,4 +10,6 @@ And yes, he's my favourite driver. <br>
 
 In terminal, run: <br>
 
-```python3 app.py```
+```
+python3 app.py
+```
