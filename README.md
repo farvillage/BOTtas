@@ -13,3 +13,9 @@ In terminal, run: <br>
 ```
 python3 app.py
 ```
+
+In your Discord server, use this command: <br>
+```
+bottas pic
+```
+ 
