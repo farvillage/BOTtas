@@ -1,25 +1,33 @@
 from nextcord.ext import commands
-import requests, json, random
+import json, random
 import nextcord
-intents = nextcord.Intents.default()
+from dotenv import load_dotenv
+import os
 
-intents.message_content = True
+def main():
+    load_dotenv()
+    token = os.getenv("DISCORD_TOKEN")
+    if not token:
+        raise ValueError("DISCORD_TOKEN ins't defined in .env")
 
-links = json.load(open("pics.json"))
+    intents = nextcord.Intents.default()
+    intents.message_content = True
 
-bot = commands.Bot(command_prefix="bottas ",intents=intents)
+    with open("pics.json") as f:
+        links = json.load(f)
 
-@bot.command(name="pic")
-async def Bottas(ctx):
-    linkDrawn = links["pic"][random.randint(0,9)]
-    #response = requests.get("https://static.independent.co.uk/2022/06/23/13/GettyImages-1328909112.jpg") **ERRADO**
-    await ctx.send(linkDrawn)
+    bot = commands.Bot(command_prefix="bottas ", intents=intents)
 
-@bot.event
-async def on_ready():
-    print(f"Logged in as: {bot.user.name}")
+    @bot.command(name="pic")
+    async def Bottas(ctx):
+        linkDrawn = random.choice(links["pic"])
+        await ctx.send(file=nextcord.File(linkDrawn))
 
-token = ""
-with open("token.txt") as file:
-    token = file.read()
-bot.run(token)
+    @bot.event
+    async def on_ready():
+        print(f"{bot.user.name} is online!")
+
+    bot.run(token)
+
+if __name__ == "__main__":
+    main()
